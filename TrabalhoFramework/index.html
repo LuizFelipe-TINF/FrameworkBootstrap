@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumnia — Simplificando o Design Web</title>
+  <link rel="stylesheet" href="estilo.css">
+
+  <!--  Importando o CSS principal do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Ícones do Bootstrap --") -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <!-- Classes prontas do Bootstrap para criar uma barra de navegação responsiva e fixa -->
+  <!-- "navbar" cria a barra de navegação padrão do Bootstrap -->
+  <!-- "navbar-dark" deixa os textos claros e o fundo escuro -->
+  <!-- "bg-primary" aplica o azul principal do Bootstrap -->
+  <!-- "fixed-top" faz a barra ficar presa no topo da página -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container"><!-- Centraliza o conteúdo -->
+      <!-- "navbar-brand" dá estilo ao nome ou logo -->
+      <!-- "fw-bold" deixa o texto em negrito -->
+      <a class="navbar-brand fw-bold" href="#">Bootstrap Solutions</a>
+      <!-- Botão que aparece no celular para abrir o menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu recolhível -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ms-auto empurra os itens pro lado direito -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CARROSSEL DE DESTAQUE -->
+  <!-- Estrutura do carrossel pronta do Bootstrap -->
+
+  <!-- "carousel slide" ativa o carrossel automático de imagens do Bootstrap -->
+  <!-- "carousel-item" indica cada slide -->
+  <!-- "active" marca o slide inicial -->
+  <section id="inicio" class="mt-5 pt-5"><!-- mt e pt = margens e espaçamentos -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner"><!-- Área com os slides -->
+        <!-- Slide ativo -->
+        <div class="carousel-item active">
+          <img src="bootstrap.png" class="d-block w-100" alt="Projetos com Bootstrap">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold">Crie sites incríveis em minutos</h5>
+            <p>Com o poder do Bootstrap, design responsivo e moderno é fácil.</p>
+          </div>
+        </div>
+        <!-- Outros slides -->
+        <div class="carousel-item">
+          <img src="linguagens-de-programacao.jpeg.webp" class="d-block w-100" alt="Design responsivo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold">Design que se adapta a qualquer tela</h5>
+            <p>Desktop, tablet ou celular — seu site sempre perfeito.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="inteligencia-artificial-algoritmo-tecnologia-codigo-de-programacao-1554210815064_v2_615x300.jpg" class="d-block w-100" alt="Suporte profissional">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold">Treinamento e suporte especializado</h5>
+            <p>Conte com nossa equipe para dominar o Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões de navegação padrão do carrossel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE -->
+  <!-- "py-5" adiciona espaçamento vertical grande -->
+  <!-- "bg-light" deixa o fundo cinza claro -->
+  <!-- "text-center" centraliza o texto -->
+  <section id="sobre" class="py-5 bg-light text-center">
+    <div class="container"><!-- Centraliza o texto -->
+      <h2 class="fw-bold mb-4">Por que escolher o Bootstrap?</h2>
+      <!-- "lead" dá um destaque maior ao parágrafo -->
+      <p class="lead">O Bootstrap é o framework front-end mais popular do mundo...</p>
+    </div>
+  </section>
+
+  <!-- 🔹 SEÇÃO PLANOS DE SUPORTE -->
+   <!-- Aqui são usados "card" e "shadow-sm" para criar caixas com sombra -->
+  <section id="planos" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5">Nossos Planos de Suporte</h2>
+      <div class="row g-4"><!-- "row" cria uma linha, "g-4" define o espaçamento entre colunas -->
+        
+        <!-- Coluna com card -->
+        <div class="col-md-4"><!-- 3 colunas em telas médias -->
+          <div class="card shadow-sm"><!-- Card pronto com sombra -->
+            <div class="card-body">
+              <!-- Ícone do Bootstrap -->
+              <i class="bi bi-lightning-charge-fill display-5 text-primary"></i>
+              <h5 class="card-title mt-3">Plano Básico</h5>
+              <p class="card-text">Suporte inicial e tutoriais básicos de uso do Bootstrap.</p>
+              <h4 class="fw-bold">R$99</h4>
+              <a href="#" class="btn btn-primary mt-2">Assinar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card com borda colorida -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-primary border-2">
+            <div class="card-body">
+              <i class="bi bi-star-fill display-5 text-warning"></i>
+              <h5 class="card-title mt-3">Plano Profissional</h5>
+              <p class="card-text">Treinamento avançado, personalização e suporte dedicado.</p>
+              <h4 class="fw-bold">R$199</h4>
+              <a href="#" class="btn btn-warning mt-2 text-white">Assinar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terceiro card -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-trophy-fill display-5 text-danger"></i>
+              <h5 class="card-title mt-3">Plano Premium</h5>
+              <p class="card-text">Consultoria completa e suporte personalizado.</p>
+              <h4 class="fw-bold">R$299</h4>
+              <a href="#" class="btn btn-danger mt-2">Assinar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <!-- "form-control" deixa inputs e textarea com visual padronizado -->
+  <!-- "btn btn-primary" cria um botão azul pronto -->
+  <section id="contato" class="bg-light py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Entre em Contato</h2>
+      <div class="row justify-content-center"><!-- Centraliza o formulário -->
+        <div class="col-md-6"><!-- Ocupa metade da tela em telas médias -->
+          <!-- Formulário usando classes de form do Bootstrap -->
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <!-- "bg-primary" deixa o fundo azul -->
+  <!-- "text-white" deixa o texto branco -->
+  <!-- "text-center" centraliza -->
+  <!-- "py-4" adiciona espaçamento vertical -->
+  <footer class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">© 2025 Lumnia — Todos os direitos reservados</p>
+
+      <!-- Ícones sociais do Bootstrap -->
+      <div class="mb-3">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+      </div>
+
+      <!-- Lista de links -->
+      <div class="text-start bg-light text-dark p-3 rounded">
+        <h6 class="fw-bold">Referências:</h6>
+        <ul class="mb-0">
+          <li><a href="https://getbootstrap.com" target="_blank">Site Oficial do Bootstrap</a></li>
+          <li><a href="https://github.com/twbs/bootstrap" target="_blank">Repositório no GitHub</a></li>
+          <li><a href="https://www.w3schools.com/bootstrap5/" target="_blank">W3Schools — Guia Bootstrap 5</a></li>
+          <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Documentação</a></li>
+          <li><a href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" target="_blank">Importado via CDN</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script JS do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
