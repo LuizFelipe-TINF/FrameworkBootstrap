@@ -21,13 +21,15 @@
   <!-- "navbar-dark" deixa os textos claros e o fundo escuro -->
   <!-- "bg-primary" aplica o azul principal do Bootstrap -->
   <!-- "fixed-top" faz a barra ficar presa no topo da página -->
+  <!-- A classe navbar-expand-lg define o ponto de quebra (992px).
+  Abaixo desse tamanho, esconde o menu (collapse) e mostra o botão (navbar-toggler) -->  
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container"><!-- Centraliza o conteúdo -->
       <!-- "navbar-brand" dá estilo ao nome ou logo -->
       <!-- "fw-bold" deixa o texto em negrito -->
       <a class="navbar-brand fw-bold" href="#">Bootstrap Solutions</a>
       <!-- Botão que aparece no celular para abrir o menu -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <!-- data-bs-toggle = ação   data-bs-target = qual elemento será alterado pela ação -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Menu recolhível -->
